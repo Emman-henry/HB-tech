@@ -1,0 +1,226 @@
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(135deg, var(--color-dark) 40%, var(--color-darklight));
+  color: var(--color-white);
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.hero-content.hero-row {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 1100px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.hero-content.hero-row:hover {
+  transform: translateY(-5px);
+}
+
+.hero-image-side {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--color-white);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.hero-image-side:hover {
+  transform: scale(1.05);
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.spanner {
+  color: var(--color-accent);
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+  max-width: 600px;
+}
+
+.cta-button {
+  padding: 14px 28px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 95, 163, 0.4);
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: var(--color-dark);
+  transform: scale(1.05);
+}
+
+/* ===== Services Section ===== */
+.services-section {
+  padding: 5rem 1rem;
+  background: var(--color-secondary);
+}
+
+.sec2head {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  width: 260px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: var(--color-dark);
+  margin-bottom: 0.8rem;
+  font-family: var(--font-heading);
+}
+
+.card a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: var(--color-dark);
+}
+
+/* ===== Why Choose HB Tech ===== */
+.section2 {
+  background: linear-gradient(135deg, var(--color-dark) 70%, var(--color-darklight));
+  padding: 6% 1rem;
+}
+
+.section2 h1 {
+  text-align: center;
+  color: var(--color-accent);
+  margin-bottom: 2.5rem;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
+
+.section2 > div {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: start;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.point1 {
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 12%;
+  font-family: var(--font-heading);
+}
+
+.pointlist li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: var(--color-white);
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+/* ===== Modals ===== */
+.modal {
+  width: 90%;
+  max-width: 520px;
+  padding: 2.2rem;
+  border: none;
+  border-radius: 14px;
+  background: var(--color-white);
+  color: var(--color-dark);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  z-index: 1001;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.modal[open] {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+}
+
+.modal-close {
+  margin-top: 1.8rem;
+  padding: 0.7rem 1.4rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: var(--color-dark);
+}

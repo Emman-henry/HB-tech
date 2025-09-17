@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HB Tech - Web Development & Tech Solutions by Emmanuel Henry" />
+  <title>HB Tech | Web Development & Tech Solutions</title>
+  <meta name="author" content="Emmanuel Henry" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favour.ico" type="image/x-icon">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="HB Tech | Web Development & Tech Solutions - Emmanuel Henry" />
+  <meta property="og:description" content="HB Tech | Web Development & Tech Solutions Emmanuel Henry" />
+  <meta property="og:image" content="https://emman-henry.github.io/Henry/images/me.webp">
+  <meta property="og:url" content="https://emman-henry.github.io/Henry/">
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Emmanuel Henry Web Projects" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/join.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="script/hb.js" defer></script>
+     <script src="script/navres.js" defer></script>
+      <script src="script/wayfinder.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <header class="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <img src="images/favour.ico" alt="HB-Tech" class="nav-icon" />
+      <p class="nav-head"><span class="spanner">HB Tech</span></p>
+    </div>
+
+    <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+
+    <nav>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html" class="nav-pages">Home</a></li>
+        <li><a href="about.html" class="nav-pages">About</a></li>
+        <li><a href="join.html" class="nav-pages">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="join-container">
+    <h1>Join HB Tech Community</h1>
+    <p>
+      Want to stay connected with me and get updates about my projects, collaborations, 
+      and opportunities? Fill out the form below and join the HB Tech circle.
+    </p>
+
+    <!-- Simple Join Form -->
+  <form action="https://formspree.io/f/mandglle" method="POST" class="join-form">
+  <h2>Join HB Tech</h2>
+
+  <label>Your First Name:
+    <input type="text" name="firstName" placeholder="John" required>
+  </label>
+
+  <label>Your Last Name:
+    <input type="text" name="lastName" placeholder="Doe" required>
+  </label>
+
+  <label>Email Address:
+    <input type="email" name="email" placeholder="your@email.com" required>
+  </label>
+
+  <label>Message / Reason for Joining:
+    <textarea name="message" placeholder="Tell me why you’d like to join..." rows="4"></textarea>
+  </label>
+
+  <!-- Redirect after successful submission -->
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  <!-- Optional: specify subject line for your email -->
+  <input type="hidden" name="_subject" value="New HB Tech Join Request">
+
+  <input type="submit" value="Join Now">
+</form>
+
+
+  </main>
+
+</body>
+<footer>
+  <section class="footer-info">
+    <div class="abt-company">
+      <p class="footer-title">HB Tech</p>
+      <p>No 6 Anthony, Lagos</p>
+      <p>e.henry.software@gmail.com</p>
+      <p>+234 916 436 7035</p>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://t.me/yourtelegram" target="_blank">
+        <img src="images/icons8-telegram.svg" alt="telegram" />
+      </a>
+      <a href="https://www.linkedin.com/in/emmanuel-henry-866ab9291/" target="_blank">
+        <img src="images/icons8-linkedin.svg" alt="linkedin" />
+      </a>
+      <a href="https://facebook.com/yourfacebook" target="_blank">
+        <img src="images/icons8-facebook.svg" alt="facebook" />
+      </a>
+    </div>
+
+    <div class="my-info">
+      <p>Emmanuel Henry</p>
+      <p>&copy;2025 HB Tech</p>
+    </div>
+  </section>
+</footer>
+
+</html>

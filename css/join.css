@@ -1,0 +1,72 @@
+/* ===== Join Page Main Section ===== */
+.join-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.join-container h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  color: var(--color-primary); /* navy blue */
+}
+
+.join-container p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-main);
+  color: var(--color-dark);
+}
+
+/* ==== Form ==== */
+.join-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.join-form input,
+.join-form textarea {
+  margin-top: 0.4rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  transition: border 0.2s;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* ==== Submit Button ==== */
+.join-form input[type="submit"] {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+.join-form input[type="submit"]:hover {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: var(--color-dark);
+  transform: scale(1.05);
+}
