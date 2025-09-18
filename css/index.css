@@ -224,3 +224,58 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   color: var(--color-dark);
 }
+/* ===== Responsive Typography ===== */
+
+/* Tablets (<= 768px) */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .sec2head {
+    font-size: 2rem;
+  }
+
+  .section2 h1 {
+    font-size: 1.6rem;
+  }
+
+  .point1 {
+    font-size: 1.1rem;
+  }
+
+  .pointlist li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .sec2head {
+    font-size: 1.6rem;
+  }
+
+  .section2 h1 {
+    font-size: 1.4rem;
+  }
+
+  .point1 {
+    font-size: 1rem;
+  }
+
+  .pointlist li {
+    font-size: 0.9rem;
+  }
+}
