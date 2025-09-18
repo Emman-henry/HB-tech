@@ -70,24 +70,26 @@
   color: var(--color-dark);
   transform: scale(1.05);
 }
-/* ===== Responsive Join Form Padding ===== */
+/* ===== Responsive Join Form (Centered with 20% side space) ===== */
 @media (max-width: 600px) {
   .join-container {
-    margin: 1rem;
-    padding: 1.5rem;
+    width: 60%;         /* leaves 20% space left + 20% right */
+    margin: 1rem auto;  /* keeps it centered */
+    padding: 1.2rem;
+  }
+
+  .join-form input,
+  .join-form textarea {
+    width: 100%;        /* inputs always match container width */
+    box-sizing: border-box;
   }
 
   .join-form {
     gap: 0.8rem;
   }
 
-  .join-form input,
-  .join-form textarea {
-    font-size: 0.95rem;
-    padding: 0.65rem;
-  }
-
   .join-form input[type="submit"] {
+    width: 100%;
     padding: 0.75rem;
     font-size: 0.9rem;
   }
