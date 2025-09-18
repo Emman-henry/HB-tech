@@ -168,3 +168,34 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* ===== Responsive Font Adjustments ===== */
+@media (max-width: 600px) {
+  .about-intro h1 {
+    font-size: 2rem;
+  }
+
+  .about-intro p {
+    font-size: 1rem;
+  }
+
+  .about-skills h2,
+  .about-values h2,
+  .about-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .values-grid h3 {
+    font-size: 1.2rem;
+  }
+
+  .values-grid p,
+  .about-cta p {
+    font-size: 0.95rem;
+  }
+
+  .skills-list li {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
