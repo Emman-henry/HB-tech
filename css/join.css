@@ -73,7 +73,7 @@
 /* ===== Responsive Join Form (Centered with 20% side space) ===== */
 @media (max-width: 600px) {
   .join-container {
-    width: 90%;         /* leaves 20% space left + 20% right */
+    width: 95%;         /* leaves 20% space left + 20% right */
     margin: 1rem auto;  /* keeps it centered */
     padding: 1.2rem;
   }
